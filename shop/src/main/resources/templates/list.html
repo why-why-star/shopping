@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户表</title>
+</head>
+<body>
+
+    <table border="1" style="width:800px;">
+        <tr>
+            <th>名称</th>
+            <th>年龄</th>
+        </tr>
+        <tr th:each="student : ${lists}">
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.age}"></td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+</html>
